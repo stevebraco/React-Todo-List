@@ -1,0 +1,101 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-list {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+  text-align: center;
+
+}
+li {
+  list-style: none;
+  background: whitesmoke;
+  padding: 1rem 3rem 1rem .3rem;
+  border-radius: .4rem;
+  margin: 1rem 0;
+}
+
+li:hover {
+  background: rgb(158, 157, 157);
+
+}
+button {
+  cursor: pointer;
+}
+small {
+  font-size: .8rem;
+  margin-top: .5rem;
+  display: inline-block;
+  border-radius: .4rem;
+  background-color: rgba(241, 147, 147, 0.404);
+  color: rgb(230, 57, 57);
+  padding: .5rem .8rem;
+}
+.delete {
+  border: none;
+  background-color: rgb(241, 147, 147);
+  border-radius: .4rem;
+  padding: .2rem;
+  margin-right: .5rem;
+  transition: .5s;
+}
+.delete:hover {
+  background-color: rgb(238, 109, 109);
+
+}
+.active {
+  text-decoration: line-through;
+}
+.bx {
+  font-size: 1.3rem;
+}
+
+input, .submit {
+  padding: .5rem;
+  border: none;
+  border: 1px solid black;
+}
+input {
+  outline: none;
+ border-top-left-radius: .3rem;
+ border-bottom-left-radius: .3rem;
+  border-right: none;
+}
+.submit {
+  background: black;
+  color: whitesmoke;
+  border-left: none;
+  border-top-right-radius: .3rem;
+ border-bottom-right-radius: .3rem;
+ font-weight: bold;
+ transition: .5s;
+}
+
+.submit:hover {
+  background-color: rgb(119, 216, 119);
+  
+}
+
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 100ms ease-in;
+}
