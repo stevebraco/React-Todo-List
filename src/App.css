@@ -1,8 +1,14 @@
+html, body, #root, .App {
+    height: 100%;
+}
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: beige;
+  font-weight: 500;
 }
+
 .todo-list {
   padding: 0;
   display: grid;
@@ -101,6 +107,7 @@ input {
 }
 @media screen and (max-width: 800px) {
   .todo-list {
-    grid-template-rows: repeat(5,minmax(0,1fr));
+   grid-template-columns: repeat(1,minmax(0,1fr));
+    gap: 0;
   }
 }
