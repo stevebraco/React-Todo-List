@@ -99,3 +99,8 @@ input {
   opacity: 0;
   transition: opacity 100ms ease-in;
 }
+@media screen and (max-width: 800px) {
+  .todo-list {
+    grid-template-rows: repeat(5,minmax(0,1fr));
+  }
+}
